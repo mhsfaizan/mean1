@@ -1,0 +1,14 @@
+.gallery{
+    width: 80%;
+    margin:0 auto;
+}
+.gallery table{
+    width: 100%;
+}
+.gallery>button{
+    float: right;
+    margin-top: 1.5rem;
+}
+.add-gallery{
+    clear: both;
+}

@@ -1,0 +1,9 @@
+.form-control{
+    width: 80%;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 0 10px #555;
+    display: block;
+}

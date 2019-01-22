@@ -1,0 +1,28 @@
+
+<mat-card>
+  <mat-card-content>
+    <div class="gallery">
+      <h1 align="center">Gallery</h1>
+      <table border="1" cellpadding="3" cellspacing="0">
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Image</th>
+          <th>Description</th>
+          <th>Delete</th>
+        </tr>
+        <tr *ngFor="let album of albums let index=index" align="center">
+          <td>{{index+1}}</td>
+          <td>{{album.title}}</td>
+          <td>{{album.image}}</td>
+          <td>{{album.description}}</td>
+          <td><button mat-raised-button color="warn" (click)="delete(album._id)">Delete</button></td>
+        </tr>
+      </table>
+      <button mat-raised-button (click)="add()">Add</button>
+      <div class="add-gallery" *ngIf="isAdd">
+          <app-add-gallery></app-add-gallery>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
