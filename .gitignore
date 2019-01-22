@@ -1,3 +1,5 @@
 /gallery/dist
 /gallery/node_modules
+/gallery/.gitignore
+/gallery/.git
 /node_modules
